@@ -1,0 +1,28 @@
+# World configuration
+#
+
+worlds:
+
+  # Main world
+  - name: oceania
+    title: "Oceania"
+
+  # Some random worlds
+  - name: world
+    title: "Jungle Islands"
+  - name: nimorien
+    title: "Survival World"
+    template: normal-survival
+
+  # Worlds from the Lord of the Rings
+  - name: gondolin
+    title: "The City of Gondolin"
+    template: panorama
+
+  # Worlds from a game of thrones
+  - name: kings_landing
+    title: "King's Landing"
+    template: panorama
+  - name: winterfell
+    title: "Winterfell"
+    template: panorama

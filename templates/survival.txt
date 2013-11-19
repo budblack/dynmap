@@ -1,0 +1,41 @@
+version: 0.20
+#
+# Default templates for survival worlds.
+#
+templates:
+  # Template for normal worlds.
+  normal-survival:
+    enabled: true
+    # Number of extra zoom-out levels for world (each level is twice as big as the previous one)
+    extrazoomout: 2
+    #center:
+    #  x: 0
+    #  y: 64
+    #  z: 0
+    maps:
+      - class: org.dynmap.hdmap.HDMap
+        name: cart
+        title: "Cart"
+        prefix: c
+        perspective: iso_S_90_hires
+        shader: stdtexture
+        lighting: brightnightandday
+        mapzoomin: 2
+      - class: org.dynmap.hdmap.HDMap
+        name: biomes
+        title: "Biomes"
+        prefix: b
+        perspective: iso_SE_60_lowres
+        shader: biome
+      - class: org.dynmap.hdmap.HDMap
+        name: temperature
+        title: "Temperature"
+        prefix: t
+        perspective: iso_SE_60_vlowres
+        shader: temperature
+      - class: org.dynmap.hdmap.HDMap
+        name: rainfall
+        title: "Rainfall"
+        prefix: r
+        perspective: iso_SE_60_vlowres
+        shader: rainfall

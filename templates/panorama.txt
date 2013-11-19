@@ -1,0 +1,31 @@
+version: 0.20
+#
+# Default template for worlds that are only for viewing. 
+#
+templates:
+  # Template for normal world (HDMap hires)
+  panorama:
+    enabled: true
+    # Number of extra zoom-out levels for world (each level is twice as big as the previous one)
+    extrazoomout: 2
+    #center:
+    #  x: 0
+    #  y: 64
+    #  z: 0
+    maps:
+      - class: org.dynmap.hdmap.HDMap
+        name: day
+        title: "Day"
+        prefix: d
+        perspective: iso_SE_30_hires
+        shader: stdtexture
+        lighting: shadows
+        mapzoomin: 2
+      - class: org.dynmap.hdmap.HDMap
+        name: night
+        title: "Night"
+        prefix: n
+        perspective: iso_SE_30_hires
+        shader: stdtexture
+        lighting: brightnight
+        mapzoomin: 2
