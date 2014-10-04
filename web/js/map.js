@@ -362,11 +362,11 @@ DynMap.prototype = {
 				downbtn_world.toggle(false);
 			}
 			else{
-				worldlist.height(sidebar.innerHeight() / 2);
+				worldlist.height(sidebar.innerHeight() / 2 - 196);
 				upbtn_world.toggle(true);
 				downbtn_world.toggle(true);
 			}
-			playerlist.height(sidebar.innerHeight() - (playerlist.offset().top - worldlist.offset().top) - 64); // here we need a fix to avoid the static value, but it works fine this way :P
+			playerlist.height(sidebar.innerHeight() - (playerlist.offset().top - worldlist.offset().top) - 96); // here we need a fix to avoid the static value, but it works fine this way :P
 			var scrollable = playerlist.scrollHeight() > playerlist.height();
 			upbtn.toggle(scrollable);
 			downbtn.toggle(scrollable);

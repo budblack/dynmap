@@ -71,6 +71,8 @@ var DynmapTileLayer = L.TileLayer.extend({
 		if (!url) {
 			this._cachedTileUrls[tileName] = url = this.options.dynmap.getTileUrl(tileName);
 		}
+		//url = url + ".png";
+		url = url.split("?")[0];
 		return url;
 	},
 

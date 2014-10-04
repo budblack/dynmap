@@ -41,6 +41,8 @@ componentconstructors['link'] = function(dynmap, configuration) {
 	_follow: function() {
 		var url = dynmap.getLink();
 		window.location = url;
+		
+//		window.parent.location = "http://mc.budblack.me" + url;
 	}
   });
 
