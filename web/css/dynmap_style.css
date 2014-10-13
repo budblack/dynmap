@@ -1053,11 +1053,19 @@ div.statusmessage {
 .button_login {
 	color: #E8F0DE;
 	border: 1px solid #538312;
-	background: -moz-linear-gradient(center top , #7DB72F, #4E7D0E) repeat scroll 0% 0% transparent;
+	color: #E8F0DE;
+	border: 1px solid #538312;
+	background: -moz-linear-gradient(top , #7DB72F, #4E7D0F) repeat scroll 0% 0% transparent;
+	background: -o-linear-gradient(top , #7DB72F, #4E7D0F) repeat scroll 0% 0% transparent;
+	background: -webkit-linear-gradient(top, #7DB72F, #4E7D0F);
+	background-color: #7DB72F;
 }
 
 .button_register {
 	color: #606060;
 	border: 1px solid #B7B7B7;
-	background: -moz-linear-gradient(center top , #FFF, #EDEDED) repeat scroll 0% 0% transparent;
+	background: -moz-linear-gradient(top , #FFF, #EDEDED) repeat scroll 0% 0% transparent;
+	background: -o-linear-gradient(top , #FFF, #EDEDED) repeat scroll 0% 0% transparent;
+	background: -webkit-linear-gradient(top , #FFF, #EDEDED) repeat scroll 0% 0% transparent;
+	background-color: #EDEDED;
 }
